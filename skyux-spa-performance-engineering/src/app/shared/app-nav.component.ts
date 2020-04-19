@@ -20,6 +20,14 @@ export class AppNavComponent {
     {
       titleKey: 'app_nav_pe',
       path: '/pe'
+    },
+    {
+      titleKey: 'app_nav_pts',
+      path: '/pts'
+    },
+    {
+      titleKey: 'app_nav_contact',
+      path: '/contact-us'
     }
   ];
 }

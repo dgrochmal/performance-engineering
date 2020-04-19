@@ -13,7 +13,15 @@
   },
   "app_nav_pe": {
     "message": "Performance Engineering",
-    "_description": "The text for the Home top-level navigation item"
+    "_description": "The text for the PE top-level navigation item"
+  },
+  "app_nav_pts": {
+    "message": "Performance Technical Services",
+    "_description": "The text for the PTS top-level navigation item"
+  },
+  "app_nav_contact": {
+    "message": "Contact Us",
+    "_description": "The text for the Contact top-level navigation item"
   },
   "home_title": {
     "message": "SKY UX Template",
