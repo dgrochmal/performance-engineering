@@ -1,5 +1,6 @@
 import {
-  Component
+  Component,
+  HostListener
 } from '@angular/core';
 
 @Component({
@@ -10,12 +11,8 @@ import {
 export class AppNavComponent {
   public nav = [
     {
-      titleKey: 'app_nav_home',
-      path: '/'
-    },
-    {
       titleKey: 'app_nav_about',
-      path: '/about'
+      path: '/'
     },
     {
       titleKey: 'app_nav_pe',
@@ -30,4 +27,31 @@ export class AppNavComponent {
       path: '/contact-us'
     }
   ];
+
+  public screenHeight = 0;
+  public screenWidth = 0;
+
+  constructor() {
+    this.onResize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  public onResize(event?: undefined) {
+     this.screenHeight = window.innerHeight;
+     this.screenWidth = window.innerWidth;
+     console.log(this.screenHeight, this.screenWidth);
+  }
+
+  public myFunction() {
+    let x = document.getElementById('items');
+    if (x.style.display === 'block') {
+      x.style.display = 'none';
+    } else {
+      x.style.display = 'block';
+    }
+  }
+
+  public isNavBar() {
+    return this.screenWidth > 660;
+  }
 }

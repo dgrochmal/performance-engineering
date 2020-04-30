@@ -1,4 +1,4 @@
-<sky-navbar>
+<sky-navbar *ngIf="isNavBar()">
   <sky-navbar-item *ngFor="let n of nav">
     <a
       [routerLink]="n.path"
@@ -9,3 +9,15 @@
     </a>
   </sky-navbar-item>
 </sky-navbar>
+
+<div class="topnav" *ngIf="!isNavBar()">
+  <a id="about" href="performance-engineering/" class="active">About</a>
+  <div id="items">
+    <a href="performance-engineering/pe">Performance Engineering</a>
+    <a href="performance-engineering/pts">Performance Technical Services</a>
+    <a href="performance-engineering/contact-us">Contact Us</a>
+  </div>
+  <a class="icon" (click)="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>

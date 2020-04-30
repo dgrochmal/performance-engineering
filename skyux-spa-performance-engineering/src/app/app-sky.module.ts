@@ -25,7 +25,8 @@ import {
     SkyAlertModule,
     SkyKeyInfoModule,
     SkyFluidGridModule,
-    SkyNavbarModule
+    SkyNavbarModule,
+    SkyKeyInfoModule
   ]
 })
 export class AppSkyModule { }

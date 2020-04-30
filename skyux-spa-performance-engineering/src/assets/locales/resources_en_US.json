@@ -7,10 +7,6 @@
     "message": "About",
     "_description": "The text for the About top-level navigation item"
   },
-  "app_nav_home": {
-    "message": "Home",
-    "_description": "The text for the Home top-level navigation item"
-  },
   "app_nav_pe": {
     "message": "Performance Engineering",
     "_description": "The text for the PE top-level navigation item"
@@ -22,9 +18,5 @@
   "app_nav_contact": {
     "message": "Contact Us",
     "_description": "The text for the Contact top-level navigation item"
-  },
-  "home_title": {
-    "message": "SKY UX Template",
-    "_description": "Title for the home component"
   }
 }
